@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <body>
+      <div class="container">
+        <div class="app-card">
+          <header>
+            <h1>TaskFlow</h1>
+            <p>Organize your day efficiently</p>
+          </header>
+
+          <form id="taskForm" class="task-form">
+            <input
+              type="text"
+              id="taskInput"
+              placeholder="What do you want to do?"
+            />
+            <button type="submit">＋</button>
+          </form>
+
+          <div class="filters">
+            <button data-filter="all" class="active">All</button>
+            <button data-filter="active">Active</button>
+            <button data-filter="completed">Done</button>
+          </div>
+
+          <ul id="taskList" class="task-list"></ul>
+
+          <footer>
+            <p id="stats"></p>
+          </footer>
+        </div>
+      </div>
+
+      <script src="script.js"></script>
+    </body>
+  </body>
+</html>

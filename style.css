@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.app-card {
+  background: #ffffff;
+  width: 380px;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  color: #5a4bda;
+  font-size: 28px;
+}
+
+header p {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.task-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.task-form input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  outline: none;
+}
+
+.task-form button {
+  width: 45px;
+  border-radius: 10px;
+  border: none;
+  font-size: 22px;
+  background: #5a4bda;
+  color: #fff;
+  cursor: pointer;
+}
+
+.task-form button:hover {
+  background: #483ac4;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.filters button {
+  flex: 1;
+  margin: 0 3px;
+  padding: 8px;
+  border-radius: 20px;
+  border: none;
+  background: #eee;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.filters button.active {
+  background: #5a4bda;
+  color: white;
+}
+
+.task-list {
+  list-style: none;
+  max-height: 260px;
+  overflow-y: auto;
+}
+
+.task-list li {
+  background: #f6f7fb;
+  padding: 10px 12px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  transition: transform 0.2s;
+}
+
+.task-list li:hover {
+  transform: scale(1.02);
+}
+
+.task-list span {
+  cursor: pointer;
+}
+
+.task-list span.completed {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.task-list button {
+  border: none;
+  background: #ff5c5c;
+  color: white;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+footer {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 13px;
+  color: #555;
+}
